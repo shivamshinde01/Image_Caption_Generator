@@ -34,7 +34,7 @@ col1, col2 = st.columns(2)
 with col1:
     if uploaded_image:
         image = Image.open(uploaded_image)
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", use_container_width=True)
 
 with col2:
     st.sidebar.header("🎨 Image Editing Options")
@@ -119,4 +119,4 @@ if uploaded_image:
             st.write(f"2. {long_caption_2}")
     
     with col2:
-        st.image(image, caption="Processed Image", use_column_width=True)
+        st.image(image, caption="Processed Image", use_container_width=True)
